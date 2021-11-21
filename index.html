@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <style>
+    .row {
+      display: flex;
+    }
+    .point {
+      width: 8px;
+      height: 8px;
+    }
+    .soil {
+      background: chartreuse;
+    }
+    .water {
+      background: dodgerblue;
+    }
+    .wood {
+      background: darkgreen;
+    }
+    .stone {
+      background: darkgray;
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <input id="mapWidth" type="number">
+    <input id="mapHeight" type="number">
+    <button onclick="init()">
+      Create map
+    </button>
+  </div>
+  <div id="map" style="margin-top: 16px"></div>
+  <script type="module" src="src/browser.js"></script>
+</body>
+</html>
